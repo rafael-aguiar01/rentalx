@@ -1,6 +1,6 @@
-import {v4 as uuidV4} from "uuid";
-class Category {
+import { v4 as uuidV4 } from "uuid";
 
+class Category {
     id?: string;
     name: string;
     description: string;
