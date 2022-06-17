@@ -52,3 +52,7 @@ CMD ["npm","run","dev"]
 
 # Ver os últimos log em execução
 # docker logs "id_do_container"
+
+# acessar o ip do container
+# docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' "id_do_container"
+# docker exec "id_do_container" /etc/hosts
