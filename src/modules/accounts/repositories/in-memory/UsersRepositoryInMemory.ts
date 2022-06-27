@@ -1,5 +1,6 @@
-import { ICreateUserDTO } from "../../dtos/ICreateUserDto";
-import { User } from "../../entities/User";
+import { ICreateUserDTO } from "@modules/accounts/dtos/ICreateUserDto";
+import { User } from "@modules/accounts/entities/User";
+
 import { IUsersRepository } from "../IUsersRepository";
 
 
@@ -13,7 +14,7 @@ class UsersRepositoryInMemory implements IUsersRepository{
         password
     }: ICreateUserDTO): Promise<void> {
         const user = new User();
-
+        
         Object.assign(user, {
             driver_license, 
             email, 
