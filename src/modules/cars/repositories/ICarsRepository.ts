@@ -1,10 +1,10 @@
 import { ICreateCarDTO } from "../dtos/ICreateCarDTO"
 import { Car } from "../infra/typeorm/entities/Car"
 
-interface IcarsRepository {
+interface ICarsRepository {
 
     create(data: ICreateCarDTO): Promise<Car>
     findByLicensePlate(license_plate: string): Promise<Car>
 }
 
-export { IcarsRepository }
+export { ICarsRepository }
