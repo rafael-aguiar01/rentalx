@@ -1,14 +1,14 @@
 **RF** -> Requisitos funcionais
 
-    - São as funcionalidades que a aplicação vai poder ter( ex: O usuário pode cadastrar uma categoria)
+    São as funcionalidades que a aplicação vai poder ter( ex: O usuário pode cadastrar uma categoria)
 
 **RNF** -> Requisitos não funcionais
 
-    - Não estão ligados diretamente com a regra aplicação(ex: os dados serão salvos no banco de dado postgree)
+    Não estão ligados diretamente com a regra aplicação(ex: os dados serão salvos no banco de dado postgree)
 
 **RN** -> Regra de negócio
 
-    - As regras por trás do requisitos(ex: não deve ser possível cadastrar uma categoria com o nome já existente)
+    As regras por trás do requisitos(ex: não deve ser possível cadastrar uma categoria com o nome já existente)
 
 # Cadastro de carro
 
@@ -67,7 +67,6 @@
     O usuário deve estar logado na aplicação
 
 # Alterar carro
-
 
  Não deve ser possível alterar a placa de um carro já cadastrado.
 
