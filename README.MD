@@ -71,7 +71,7 @@
 
  Não deve ser possível alterar a placa de um carro já cadastrado.
 
- # Devolução de carro
+# Devolução de carro
 
 **RF**
 Deve ser possível realizar a devolução de um carro
@@ -85,6 +85,13 @@ Caso o horário de devolução seja superior ao horário previsto de entrega, de
 Caso haja multa, deverá ser somado ao total do aluguel
 O usuário deve estar logado na aplicação
 
+# Listagem de alugueis para usuário
+
+**RF**
+Deve ser possível realizar a busca de todos os alugueis para o usuário
+
+**RN**
+O usuário deve ser logado na aplicação
 
 
 
