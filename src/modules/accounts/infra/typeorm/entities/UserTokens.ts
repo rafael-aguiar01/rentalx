@@ -4,7 +4,7 @@ import { Column, CreateDateColumn, Entity, JoinColumn, ManyToOne, PrimaryColumn 
 import { User } from "./User";
 
 @Entity("users_tokens")
-class UserTokens {
+class UsersTokens {
 
     @PrimaryColumn()
     id: string;
@@ -32,4 +32,4 @@ class UserTokens {
     }
 }
 
-export { UserTokens }
+export { UsersTokens }
