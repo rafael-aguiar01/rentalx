@@ -3,6 +3,7 @@ import { v4 as uuidv4 } from "uuid"
 import { IUsersRepository } from "@modules/accounts/repositories/IUsersRepository";
 import { AppError } from "@shared/errors/AppError";
 import { IUsersTokensRepository } from "@modules/accounts/repositories/IUsersTokensRepository";
+import { IDateProvider } from "@shared/container/providers/DateProvider/IDateProvider";
 
 @injectable()
 class SendForgotPasswordMailUseCase {
@@ -10,7 +11,9 @@ class SendForgotPasswordMailUseCase {
         @inject("UsersRepository")
         private usersRepository: IUsersRepository,
         @inject("UsersTokensRepository")
-        private usersTokensRepository: IUsersTokensRepository
+        private usersTokensRepository: IUsersTokensRepository,
+        @inject("DaysjDateProvider")
+        private dateProvider: IDateProvider
     ){}
 
     async execute(email: string){
@@ -21,11 +24,14 @@ class SendForgotPasswordMailUseCase {
         }
          
         const token = uuidv4();
+        const expires_hours = 3;
+
+        const expires_date = this.dateProvider.addHours(expires_hours)
         
         await this.usersTokensRepository.create({
             refresh_token: token,
             user_id: user.id,
-            expires_date: 
+            expires_date,
         })
 
     }
