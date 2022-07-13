@@ -4,7 +4,7 @@ import { Router } from "express";
 import { ensureAuthenticated } from "@shared/infra/http/middlewares/ensureAuthenticated";
 import multer from "multer";
 import uploadConfig from "@config/upload";
-import { ProfileUserController } from "@modules/cars/useCases/profileUser/ProfileUserController";
+import { ProfileUserController } from "@modules/accounts/useCases/profileUser/ProfileUserController";
 
 const usersRoutes = Router()
 
@@ -22,6 +22,7 @@ usersRoutes.patch(
     uploadAvatar.single("avatar"),
     updateUserAvatarController.handle
 );
+
 
 usersRoutes.get(
     "/profile",
