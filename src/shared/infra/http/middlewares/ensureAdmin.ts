@@ -1,6 +1,6 @@
 
 import { UsersRepository } from "@modules/accounts/infra/typeorm/repositories/UserSRepository";
-import { AppError } from "@shared/errors/AppError";
+import { AppError } from "@errors/AppError";
 import { NextFunction, Request, Response } from "express";
 
 

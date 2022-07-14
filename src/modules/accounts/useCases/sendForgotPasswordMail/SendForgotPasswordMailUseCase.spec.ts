@@ -2,7 +2,7 @@ import { UsersRepositoryInMemory } from "@modules/accounts/repositories/in-memor
 import { UsersTokensRepositoryInMemory } from "@modules/accounts/repositories/in-memory/UsersTokensRepositoryInMemory";
 import { DayjsDateProvider } from "@shared/container/providers/DateProvider/implementation/DayjsDateProvider";
 import { MailProviderInMemory } from "@shared/container/providers/MailProvider/in-memory/MailProviderInMemory";
-import { AppError } from "@shared/errors/AppError";
+import { AppError } from "@errors/AppError";
 import { SendForgotPasswordMailUseCase } from "./SendForgotPasswordMailUseCase";
 
 let sendForgotPasswordMailUseCase: SendForgotPasswordMailUseCase;
