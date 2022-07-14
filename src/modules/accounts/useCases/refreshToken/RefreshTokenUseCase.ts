@@ -3,7 +3,7 @@ import { verify, sign } from "jsonwebtoken"
 
 import { IUsersTokensRepository } from "@modules/accounts/repositories/IUsersTokensRepository";
 import auth from "@config/auth";
-import { AppError } from "@errors/AppError";
+import { AppError } from "@shared/errors/AppError";
 import { IDateProvider } from "@shared/container/providers/DateProvider/IDateProvider";
 
 interface IPayload {
