@@ -1,4 +1,7 @@
 node_modules
-tmp
+tmp/*
 yarn-error.log
+coverage
 .env
+!tmp/.gitkeep
+dist/
