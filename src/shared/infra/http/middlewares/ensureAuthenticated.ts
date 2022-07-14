@@ -5,7 +5,7 @@ import { NextFunction, Request, Response } from "express";
 import { verify  } from "jsonwebtoken";
 import { UsersTokensRepository } from "@modules/accounts/infra/typeorm/repositories/UsersTokenRepository";
 import auth from "@config/auth";
-import { UsersRepository } from "@modules/accounts/infra/typeorm/repositories/UserSRepository";
+import { UsersRepository } from "@modules/accounts/infra/typeorm/repositories/UsersRepository";
 
 
 interface IPayload{
