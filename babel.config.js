@@ -1,5 +1,5 @@
-module.exports = {
 
+module.exports = {
     presets: [
         ["@babel/preset-env", { targets: { node: "current"}}],
         "@babel/preset-typescript",
@@ -10,10 +10,10 @@ module.exports = {
             {
                 alias: {
                     "@modules/": "./src/modules",
-                      "@config/": "./src/config",
-                      "@shared/": "./src/shared",
-                      "@errors*": "./src/errors",
-                      "@utils/": "./src/utils",
+                    "@config/": "./src/config",
+                    "@shared/": "./src/shared",
+                    "@errors*": "./src/errors",
+                    "@utils/": "./src/utils",
                 },
             },
         ],
