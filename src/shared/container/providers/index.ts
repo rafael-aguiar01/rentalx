@@ -13,10 +13,10 @@ container.registerSingleton<IDateProvider>(
     DayjsDateProvider
 )
     
-container.registerInstance<IMailProvider>(
-    "EtherealMailProvider",
-    new EtherealMailProvider()
-);
+// container.registerInstance<IMailProvider>(
+//     "EtherealMailProvider",
+//     new EtherealMailProvider()
+// );
 
 const diskstorage = {
     local: LocalStorageProvider,

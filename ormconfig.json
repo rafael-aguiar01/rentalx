@@ -3,7 +3,7 @@
     "port": 6824,
     "host": "localhost", 
     "username": "docker",
-    "password": "abc123!@",
+    "password": "ignite",
     "database": "rentx", 
     "migrations": ["./dist/shared/infra/typeorm/migrations/*.js"],
     "entities": ["./dist/modules/**/entities/*.js"],
